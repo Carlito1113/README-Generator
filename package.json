@@ -1,0 +1,27 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "This is my node README generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlito1113/README-Generator.git"
+  },
+  "keywords": [
+    "node",
+    "inquirer",
+    "fs"
+  ],
+  "author": "Carlito Algarin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carlito1113/README-Generator/issues"
+  },
+  "homepage": "https://github.com/Carlito1113/README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
