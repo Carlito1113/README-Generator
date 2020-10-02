@@ -52,7 +52,10 @@ inquirer.prompt([
 ])
 .then(function(answers) {
     // console.log(answers);
-
+let badgeURL;
+    if (Response.license === "MIT License") {
+        badgeURL = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    }
 
 
 const generatedFile = generateMarkdown(answers);
