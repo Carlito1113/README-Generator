@@ -26,7 +26,7 @@ inquirer.prompt([
     },
     {
         type:"list",
-        message: "What licenses are used in this application?",
+        choices: ["MIT License", "GNU GPL v3", "Apache 2.0 License"],
         name: "license"
     },
     {
@@ -53,20 +53,20 @@ inquirer.prompt([
 .then(function(answers) {
     // console.log(answers);
 let badgeURL;
-    if (Response.license === "MIT License") {
+    if (answers.license === "MIT License") {
         badgeURL = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
     }
-    if (Response.license === "GNU GPL v3") {
+    if (answers.license === "GNU GPL v3") {
         badgeURL = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
     }
-    if (Response.license === "GNU GPL v3") {
-        badgeURL = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+    if (answers.license === "Apache 2.0 License") {
+        badgeURL = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
     }
+    
 
+const generatedFile = generateMarkdown(answers, badgeURL);
 
-const generatedFile = generateMarkdown(answers);
-
-    fs.writeFile("README.md", markdownFile, function(err){
+    fs.writeFile("README.md", generatedFile, function(err){
         if(err) throw err;
     })
     console.log(generatedFile);
