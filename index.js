@@ -25,7 +25,7 @@ inquirer.prompt([
         name: "usage"
     },
     {
-        type:"input",
+        type:"list",
         message: "What licenses are used in this application?",
         name: "license"
     },
@@ -55,6 +55,12 @@ inquirer.prompt([
 let badgeURL;
     if (Response.license === "MIT License") {
         badgeURL = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    }
+    if (Response.license === "GNU GPL v3") {
+        badgeURL = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+    }
+    if (Response.license === "GNU GPL v3") {
+        badgeURL = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
     }
 
 
