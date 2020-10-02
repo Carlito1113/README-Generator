@@ -1,12 +1,13 @@
 
 function generateMarkdown(answers) {
-    return `
-    # ${answers.title}
+    return `# ${answers.title}
+    
 
     ## Description
     ${answers.description}
 
     ### Installation
+    Run this to install
     ${answer.install}    
     
     ## Table of Contents (Optional)
@@ -25,23 +26,30 @@ function generateMarkdown(answers) {
     
     
     ## Credits
+    Contributors:
     ${answer.contributors}
     
     
     ## License
+    This application is licensed under
     ${answer.license}  
 
+    ## Contributing
+    After forking this repository, contributions in the form of issues and pull requests are welcomed and encouraged.
+
     ## Tests
+    Run this command for testing the application
     ${answer.tests}  
     
     ## questions
-    ${answer.questions}
-
-    ## github user
+    If you have any questions regarding this application contact me at
+    ## my github profile
     ${answer.github}
-
-    ## email
+    ## Or
+    ## my email
     ${answer.email}
+    
+
     
     ---
     
