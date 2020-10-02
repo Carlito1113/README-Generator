@@ -9,7 +9,7 @@ This is an application that utilizes javascript and node to generate README file
 Run this to install
 Run install application    
     
-## Table of Contents
+## Table of Contents (Optional)
     
 If your README is very long, add a table of contents to make it easy for users to find what they need.
     
@@ -17,6 +17,10 @@ If your README is very long, add a table of contents to make it easy for users t
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+* [Description](#description)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
     
     
 ## Usage 
@@ -40,11 +44,11 @@ After forking this repository, contributions in the form of issues and pull requ
 Run this command for testing the application
 Test  
     
-## questions
+## Questions
 If you have any questions regarding this application contact me at
-## my github profile
+my github profile
 Carlito1113
-## Or
-## my email
+or my email
 carlito1113@yahoo.com
-
+## Video Demonstrating Functionality
+https://drive.google.com/file/d/1hm1a3aeEkvrkJlzlayULS6a6D21uPRNK/view
