@@ -9,7 +9,7 @@ This is an application that utilizes javascript and node to generate README file
 Run this to install
 Run install application    
     
-## Table of Contents (Optional)
+## Table of Contents
     
 If your README is very long, add a table of contents to make it easy for users to find what they need.
     

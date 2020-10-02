@@ -18,6 +18,10 @@ If your README is very long, add a table of contents to make it easy for users t
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+* [Description](#description)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
     
     
 ## Usage 
@@ -41,7 +45,7 @@ After forking this repository, contributions in the form of issues and pull requ
 Run this command for testing the application
 ${answers.tests}  
     
-## questions
+## Questions
 If you have any questions regarding this application contact me at
 ## my github profile
 ${answers.github}
